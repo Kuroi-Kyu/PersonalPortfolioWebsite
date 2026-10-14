@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your academic journey, projects, and reflections in a professional portfolio to build your online presence and connect with mentors or employers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
