@@ -10,54 +10,21 @@ const navItems = [
 const projects = [
   {
     number: "01",
-    type: "Machine Learning",
-    title: "CropSense",
+    type: "Website",
+    title: "NutriFit",
     description:
-      "A computer vision model that identifies common crop diseases from leaf images, built to support faster field diagnosis.",
-    meta: "Python · TensorFlow · OpenCV",
+      "A website created for my Highschool research congress. The purpose of this website is to calculate the user BMI and create a meal plan based on it.",
     className: "bg-[#dfe8d3]",
-  },
-  {
-    number: "02",
-    type: "Data Science",
-    title: "Commute Lens",
-    description:
-      "An exploratory analysis of student commute patterns, turning survey data into actionable campus transport insights.",
-    meta: "Pandas · Jupyter · Tableau",
-    className: "bg-[#d8e5ee]",
-  },
-  {
-    number: "03",
-    type: "Human-Centered AI",
-    title: "StudyMate",
-    description:
-      "A prototype study companion that creates review questions from class notes while keeping the learner in control.",
-    meta: "React · NLP · Figma",
-    className: "bg-[#efe1d1]",
   },
 ];
 
 const reflections = [
   {
-    date: "March 14, 2025",
-    title: "The model is only half the solution",
+    date: "October 14, 2026",
+    title: "The Start",
     excerpt:
-      "Building my first end-to-end classifier taught me that clear problem framing and thoughtful evaluation matter just as much as accuracy.",
+      "This E-portfolio is still a work in progress, I will continue to update it throughout my academic journey.",
     category: "Learning",
-  },
-  {
-    date: "February 02, 2025",
-    title: "Finding confidence in the messy middle",
-    excerpt:
-      "A reflection on debugging, asking better questions, and learning to see failed experiments as useful evidence rather than setbacks.",
-    category: "Growth",
-  },
-  {
-    date: "December 18, 2024",
-    title: "Designing AI for real people",
-    excerpt:
-      "What a semester project revealed about bias, accessibility, and the responsibility to build technology with—not just for—its users.",
-    category: "Perspective",
   },
 ];
 
@@ -100,7 +67,7 @@ export default function App() {
             className="font-display text-xl font-semibold tracking-tight"
             href="#home"
           >
-            AR<span className="text-[#e65f3b]">.</span>
+            ES<span className="text-[#e65f3b]">.</span>
           </a>
 
           <nav className="hidden items-center gap-9 md:flex" aria-label="Main navigation">
@@ -114,14 +81,6 @@ export default function App() {
               </a>
             ))}
           </nav>
-
-          <a
-            className="hidden items-center gap-2 rounded-full bg-[#17201b] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[#e65f3b] sm:flex"
-            href="mailto:alex.rivera@example.com"
-          >
-            Let&apos;s connect
-            <ArrowIcon diagonal />
-          </a>
 
           <button
             aria-expanded={menuOpen}
@@ -185,9 +144,9 @@ export default function App() {
               </h1>
               <div className="mt-10 grid gap-8 border-t border-black/15 pt-8 sm:grid-cols-[1fr_auto] sm:items-end">
                 <div>
-                  <p className="mb-2 font-display text-2xl">Alex Rivera</p>
+                  <p className="mb-2 font-display text-2xl">Elijah Sy</p>
                   <p className="max-w-lg text-base leading-7 text-[#5d635c]">
-                    Third-year BS Artificial Intelligence Engineering student
+                    First-year BS Artificial Intelligence Engineering student
                     exploring how responsible technology can solve tangible,
                     human problems.
                   </p>
@@ -249,11 +208,6 @@ export default function App() {
                     understand complex systems and reshape them around real
                     human needs.
                   </p>
-                  <p className="leading-7 text-[#abb6ad]">
-                    My academic journey has taken me from writing my first lines
-                    of Python to training models, studying data ethics, and
-                    collaborating on solutions that begin with listening.
-                  </p>
                 </div>
                 <dl className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-3">
                   <div>
@@ -266,7 +220,7 @@ export default function App() {
                     <dt className="mb-2 text-xs uppercase tracking-[0.18em] text-[#7f8c82]">
                       Year level
                     </dt>
-                    <dd className="font-display text-xl">Third year</dd>
+                    <dd className="font-display text-xl">First year</dd>
                   </div>
                   <div>
                     <dt className="mb-2 text-xs uppercase tracking-[0.18em] text-[#7f8c82]">
@@ -316,14 +270,6 @@ export default function App() {
                     <p className="mt-5 leading-7 text-[#4d554f]">
                       {project.description}
                     </p>
-                    <div className="mt-8 flex items-center justify-between border-t border-black/15 pt-5">
-                      <span className="text-xs font-medium text-[#5d635c]">
-                        {project.meta}
-                      </span>
-                      <span className="flex h-10 w-10 items-center justify-center rounded-full border border-black/25 transition group-hover:bg-[#17201b] group-hover:text-white">
-                        <ArrowIcon diagonal />
-                      </span>
-                    </div>
                   </div>
                 </article>
               ))}
@@ -369,9 +315,6 @@ export default function App() {
                         {reflection.excerpt}
                       </p>
                     </div>
-                    <span className="hidden h-11 w-11 items-center justify-center rounded-full border border-black/20 sm:flex">
-                      <ArrowIcon diagonal />
-                    </span>
                   </article>
                 ))}
               </div>
@@ -384,36 +327,29 @@ export default function App() {
           <div className="pointer-events-none absolute -right-8 -top-32 h-[380px] w-[380px] rounded-full border border-black/15" />
           <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
             <SectionLabel>Contact</SectionLabel>
-            <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-end">
+            <div>
               <div>
                 <h2 className="font-display max-w-5xl text-6xl leading-[0.92] tracking-[-0.055em] sm:text-8xl lg:text-[7.5rem]">
                   Let&apos;s build something that matters.
                 </h2>
-                <a
-                  className="mt-10 inline-flex items-center gap-3 border-b border-black/40 pb-2 text-lg font-semibold transition hover:border-black"
-                  href="mailto:alex.rivera@example.com"
-                >
-                  alex.rivera@example.com
-                  <ArrowIcon diagonal />
-                </a>
-              </div>
-              <div className="flex gap-3">
-                <a
-                  className="flex h-12 items-center justify-center rounded-full border border-black/30 px-5 text-sm font-semibold transition hover:bg-[#17201b] hover:text-white"
-                  href="https://www.linkedin.com"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  LinkedIn
-                </a>
-                <a
-                  className="flex h-12 items-center justify-center rounded-full border border-black/30 px-5 text-sm font-semibold transition hover:bg-[#17201b] hover:text-white"
-                  href="https://github.com"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  GitHub
-                </a>
+                <div className="mt-10 flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+                  <a
+                    className="inline-flex items-center gap-3 border-b border-black/40 pb-2 text-lg font-semibold transition hover:border-black"
+                    href="mailto:terrenceelijahmsy28@gmail.com"
+                  >
+                    terrenceelijahmsy28@gmail.com
+                    <ArrowIcon diagonal />
+                  </a>
+                  <a
+                    className="flex h-12 items-center justify-center gap-2 rounded-full bg-[#17201b] px-6 text-sm font-semibold text-white transition hover:bg-white hover:text-[#17201b]"
+                    href="https://github.com/Kuroi-Kyu"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    View GitHub
+                    <ArrowIcon diagonal />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -422,7 +358,6 @@ export default function App() {
 
       <footer className="bg-[#17201b] py-7 text-[#abb6ad]">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 text-xs sm:flex-row sm:items-center sm:justify-between lg:px-10">
-          <p>© 2025 Alex Rivera. Thoughtfully designed &amp; built.</p>
           <a className="transition hover:text-white" href="#home">
             Back to top ↑
           </a>
